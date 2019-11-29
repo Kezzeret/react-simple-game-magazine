@@ -1,0 +1,23 @@
+.header {
+    background-color: green;
+    grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". logo menu-top switcher profile .";
+  }
+
+  .logo {
+    grid-area: logo;
+  }
+  
+  .menu-top {
+    grid-area: menu-top;
+  }
+  
+  .switcher {
+    grid-area: switcher;
+  }
+  
+  .profile {
+    grid-area: profile;
+  }

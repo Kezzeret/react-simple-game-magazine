@@ -1,0 +1,10 @@
+.article {
+    background-color: gray;
+    display: grid;
+    grid-template-rows: 7fr 1fr 1fr;
+  }
+
+  .article img {
+      width: 500px;
+      height: 250px;
+  }

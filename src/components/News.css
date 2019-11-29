@@ -1,0 +1,9 @@
+.news {
+    background-color: green;
+    grid-area: n;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+  }
+  
