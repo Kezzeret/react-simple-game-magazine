@@ -1,16 +1,16 @@
 import React from 'react';
 import './Article.css';
 
-const Article = () => {
+const Article = (props) => {
     return <div className='article'>
     <div className='article_preview'>
-        <img src='https://cdn.everyplayer.ru/source/1/M3uTX-kixBrSiHcaPxyQ--Yl3vtUZanp.jpeg'></img>
+        <img src={props.preview}></img>
     </div>
     <div>
-        Resident Evil 2 (remake): возвращение тирана
+        {props.title}
     </div>
     <div>
-        Читать подробнее
+        {props.link}
     </div>
   </div>
 }

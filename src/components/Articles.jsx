@@ -2,17 +2,15 @@ import React from 'react';
 import './Articles.css';
 import Article from './Article';
 
-const Articles = () => {
+const Articles = (props) => {
+
+  let articlesElement = props.articles.map( n => 
+    <Article preview={n.preview} title={n.title} link={n.link} />);
     return <div className='articles'>
-    <div className='item'>
+    <div className='articles_title'>
       Статьи
     </div>
-    <div className='article_1'>
-    <Article />
-    </div>
-    <div className='article_2'>
-    <Article />
-    </div>
+    {articlesElement}
   </div>
 }
 

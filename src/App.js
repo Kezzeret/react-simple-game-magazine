@@ -2,18 +2,24 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Slider from './components/Slider';
-import Articles from './components/Articles';
-import News from './components/News';
 import Navbar from './components/Navbar';
+import MainPage from './components/MainPage';
+import PageArticles from './components/PageArticles';
+import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
+const App = (props) => {
+
+  
+
   return (
-    <div className="wrapper">
-      <Header />
-      <Slider />
-      <Articles />
-      <News />
-    </div>
+    <BrowserRouter>
+      <div className="wrapper">
+        <Header />
+        <Slider />
+        <Route path="/main" render = {  () => <MainPage articlesData={props.articlesData} newsData={props.newsData} /> } />
+        <Route path="/articles" render = { () => <PageArticles pageArticlesData={props.pageArticlesData} /> } />
+      </div>
+    </BrowserRouter>
   );
 }
 
