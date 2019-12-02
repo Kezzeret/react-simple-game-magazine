@@ -4,9 +4,9 @@ import Article from './Article';
 
 const Articles = (props) => {
 
-  let articlesElement = props.articles.map( n => 
+  let articlesElement = props.articles.map(n =>
     <Article preview={n.preview} title={n.title} link={n.link} />);
-    return <div className='articles'>
+  return <div className='articles'>
     <div className='articles_title'>
       Статьи
     </div>

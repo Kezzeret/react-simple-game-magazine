@@ -1,9 +1,9 @@
 import React from 'react';
 import './Header.css';
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Header = () => {
-    return <header className='header'>
+  return <header className='header'>
     <div className='logo'>
       <img src='https://everyplayer.ru/img/logo.png'></img>
     </div>

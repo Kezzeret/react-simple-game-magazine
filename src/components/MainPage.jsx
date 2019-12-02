@@ -6,7 +6,7 @@ import './MainPage.css'
 const MainPage = (props) => {
     return <div className='mainPage'>
         <Articles articles={props.articlesData} />
-        <News news={props.newsData}/>
+        <News news={props.newsData} />
     </div>
 }
 
