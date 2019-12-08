@@ -2,8 +2,8 @@
     background-color: green;
     grid-area: h;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: ". logo menu-top switcher profile .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". logo menu-top switcher addPost button.";
   }
 
   .logo {
@@ -18,6 +18,10 @@
     grid-area: switcher;
   }
   
-  .profile {
-    grid-area: profile;
+  .addPost{
+    grid-area: addPost;
+  }
+
+  .button {
+    grid-area: button;
   }

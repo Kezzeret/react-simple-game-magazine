@@ -2,9 +2,15 @@ import React from 'react';
 import './PieceofNews.css';
 
 const PieceOfNews = (props) => {
+
+    let previewRef = React.createRef();
+    let GetWidth = () => {
+        alert(previewRef.current.offsetWidth);
+        let elem = document.getElementsByClassName('new_preview');
+    }
     return <div className='new'>
-        <div className='new_preview'>
-            <img src={props.preview}></img>
+        <div className='new_preview' ref={previewRef} onClick={GetWidth} style={{backgroundImage: `url(${props.preview})`}}>
+            
         </div>
         <div className='new_name'>
             {props.title}

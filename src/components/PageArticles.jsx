@@ -5,7 +5,7 @@ import ArticleItem from './ArticleItem'
 const PageArticles = (props) => {
 
     let articlesElement = props.pageArticlesData.map(n =>
-        <ArticleItem preview={n.preview} title={n.title} date={n.date} commentsCount={n.commentsCount} text={n.text} />);
+        <div key={n.id}><ArticleItem preview={n.preview} title={n.title} date={n.date} commentsCount={n.commentsCount} text={n.text} /></div>);
     return <div className='pageArticles'>
         {articlesElement}
 

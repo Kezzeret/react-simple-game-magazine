@@ -1,27 +1,41 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './ArticleItem.css';
+import { tsImportEqualsDeclaration } from '@babel/types';
 
-const ArticleItem = (props) => {
-    return <div className='articleItem'>
+class ArticleItem extends Component {
+
+    state = {
+        isOpen: true
+    }
+    render() {
+        const articleTextFull = this.state.isOpen && <div className='articleText'>{this.props.text}</div>
+        const articleTextSmall = !this.state.isOpen && <div className='articleText'>укороченная версия</div>
+        return <div className='articleItem'>
         <div className='articlePreview'>
-            <img src={props.preview}></img>
+            <img src={this.props.preview}></img>
         </div>
         <div className='articleTitle'>
-            {props.title}
+            {this.props.title}
         </div>
         <div className='articleDate'>
-            {props.date}
+            {this.props.date}
         </div>
         <div className='articleComment'>
-            {props.commentsCount}
+            {this.props.commentsCount}
         </div>
-        <div className='articleText'>
-            {props.text}
-        </div>
+        <button onClick={this.handleClick}>
+            {this.state.isOpen ? "Закрыть" : "Открыть"}
+        </button>
+        {articleTextFull}
+        {articleTextSmall}
     </div>
+    }
+
+    handleClick = () => {
+        this.setState({
+            isOpen: !this.state.isOpen
+        })
+    }
 }
-
-
-
 
 export default ArticleItem;

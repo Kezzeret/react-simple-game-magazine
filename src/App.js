@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './css/fonts.css'
 import Header from './components/Header';
 import Slider from './components/Slider';
 import Navbar from './components/Navbar';
@@ -14,10 +15,10 @@ const App = (props) => {
   return (
     <BrowserRouter>
       <div className="wrapper">
-        <Header />
+        <Header addPost={props.addPost}/>
         <Slider />
-        <Route path="/main" render = {  () => <MainPage articlesData={props.articlesData} newsData={props.newsData} /> } />
-        <Route path="/articles" render = { () => <PageArticles pageArticlesData={props.pageArticlesData} /> } />
+        <Route path="/main" render = {  () => <MainPage articlesData={props.appState.articlesData} newsData={props.appState.newsData} /> } />
+        <Route path="/articles" render = { () => <PageArticles pageArticlesData={props.appState.pageArticlesData} /> } />
       </div>
     </BrowserRouter>
   );

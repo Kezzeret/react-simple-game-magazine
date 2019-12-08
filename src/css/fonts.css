@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "MetronicforBlizzard";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/MetronicforBlizzard/MetronicforBlizzard.eot");
+    src: url("../fonts/MetronicforBlizzard/MetronicforBlizzard.eot?#iefix") format("embedded-opentype"), url("../fonts/MetronicforBlizzard/MetronicforBlizzard.woff") format("woff"), url("../fonts/MetronicforBlizzard/MetronicforBlizzard.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Trajan";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/TrajanPro3-Regular/TrajanPro3-Regular.eot");
+    src: url("../fonts/TrajanPro3-Regular/TrajanPro3-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TrajanPro3-Regular/TrajanPro3-Regular.woff") format("woff"), url("../fonts/TrajanPro3-Regular/TrajanPro3-Regular.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Roboto-Regular";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Roboto-Regular/Roboto-Regular.eot");
+    src: url("../fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Trajan-bold";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.eot");
+    src: url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.woff") format("woff"), url("../fonts/TrajanPro3-Bold/TrajanPro3-Bold.ttf") format("truetype"); }
+  
+  @font-face {
+    font-family: "Icomoon";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../fonts/Icomoon/icomoon.eot");
+    src: url("../fonts/Icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/Icomoon/icomoon.woff") format("woff"), url("../fonts/Icomoon/icomoon.ttf") format("truetype"); }
+  

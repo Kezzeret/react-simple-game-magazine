@@ -7,6 +7,9 @@ const MainPage = (props) => {
     return <div className='mainPage'>
         <Articles articles={props.articlesData} />
         <News news={props.newsData} />
+        <script>
+            
+        </script>
     </div>
 }
 

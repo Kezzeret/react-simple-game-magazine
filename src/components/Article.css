@@ -1,14 +1,19 @@
 .article {
-    background-color: gray;
     display: grid;
-    grid-template-rows: 7fr 1fr 1fr;
+    grid-template-rows: 12fr 1fr 1fr;
   }
 
 .article_preview {
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
   .article img {
       width: 730px;
       height: 250px;
+  }
+
+  .article_name {
+
   }

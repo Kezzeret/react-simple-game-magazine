@@ -1,5 +1,4 @@
 .articles {
-    background-color: orange;
     grid-area: a;
     display: grid;
     padding: 20px;
@@ -10,5 +9,21 @@
 .articles_title {
   grid-column-start: 1;
   grid-column-end: -1;
-  background-color: blue;
+  display: inline-block;
+  padding: 18px 15px 15px 15px;
+  min-width: 280px;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fffefe;
+  font-family: "Trajan", sans-serif;
+  background: #eb7027;
+  -webkit-box-shadow: 7px 6px 0px 0px #833e14;
+  box-shadow: 7px 6px 0px 0px #833e14;
 }
+
+h1, h2, h3 {
+  margin: 20px 0;
+  color: #e9eaec;
+  word-break: break-word; }
