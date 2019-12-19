@@ -4,13 +4,6 @@ import { NavLink } from "react-router-dom"
 
 const Header = (props) => {
 
-  let newPostElement = React.createRef();
-
-  let addNewPost = () => {
-    let text = newPostElement.current.value;
-    newPostElement.current.value = ""
-    props.addPost(text);
-  }
 
   return <header className='header'>
     <div className='logo'>
@@ -19,13 +12,9 @@ const Header = (props) => {
     <div className='menu-top'>
       <NavLink to="/main">Профиль </NavLink>
       <NavLink to="/articles">Статьи </NavLink>
+      <NavLink to="/admin">Админка</NavLink>
     </div>
-    <div className='switcher'>color</div>
-    <div className='addPost'>
-      <textarea ref={newPostElement}></textarea>
-    </div>
-    <button className='button' onClick={addNewPost}>тест-кнопка</button>
-  </header>
+    </header>
 }
 
 export default Header;

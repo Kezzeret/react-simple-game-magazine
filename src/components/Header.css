@@ -3,7 +3,7 @@
     grid-area: h;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: ". logo menu-top switcher addPost button.";
+    grid-template-areas: ". logo . menu-top menu-top . .";
   }
 
   .logo {
@@ -12,16 +12,4 @@
   
   .menu-top {
     grid-area: menu-top;
-  }
-  
-  .switcher {
-    grid-area: switcher;
-  }
-  
-  .addPost{
-    grid-area: addPost;
-  }
-
-  .button {
-    grid-area: button;
   }
