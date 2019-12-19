@@ -6,19 +6,31 @@ import { addNewPostrActionCreator } from './../redux/state'
 const Admin = (props) => {
 
 
-  let newPostElement = React.createRef();
+  let newPostTitle = React.createRef();
+  let newPostImg = React.createRef();
+  let newPostText = React.createRef();
 
   let addNewPost = () => {
-    let text = newPostElement.current.value;
-    newPostElement.current.value = ""
-    props.dispatch(addNewPostrActionCreator(text));
+    let title = newPostTitle.current.value;
+    let img = newPostImg.current.value;
+    let text = newPostText.current.value;
+    newPostTitle.current.value = ""
+    newPostImg.current.value = ""
+    newPostText.current.value = ""
+    props.dispatch(addNewPostrActionCreator(title, img, text));
   }
   
     return <div className='admin'>
     <div className='addPost'>
-        <textarea ref={newPostElement}></textarea>
+      <label>Добавление новости</label>
+      <label>Название новости</label>
+      <input ref={newPostTitle}></input>
+      <label>Ссылка на изображение</label>
+      <input ref={newPostImg}></input>
+      <label>Текст новости</label>
+      <input ref={newPostText}></input>
     </div>
-        <button className='button' onClick={addNewPost}>тест-кнопка</button>
+        <button className='button' onClick={addNewPost}>Добавить новость</button>
     </div>
 }
 

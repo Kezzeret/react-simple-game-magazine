@@ -17,6 +17,9 @@ const News = (props) => {
     );
 
     return <div className='news'>
+        <div className='news_title'>
+      <h2>Новости</h2>
+    </div>
         {newsElement}
     </div>
 }

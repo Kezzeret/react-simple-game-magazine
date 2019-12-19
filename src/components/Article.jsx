@@ -8,7 +8,7 @@ const Article = (props) => {
         <div className='article_name'>
             {props.title}
         </div>
-        <div>
+        <div className='article_read'>
             {props.link}
         </div>
     </div>

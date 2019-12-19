@@ -1,8 +1,14 @@
 .new {
-    background-color: rgb(207, 64, 64);
+    font-family: MetronicforBlizzard, sans-serif;
+    background-color: rgb(233, 233, 233);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 100px 20px 100px 40px;
+    grid-template-rows: 250px 40px 30px 70px 40px 60px;
+}
+
+.new:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.02);
 }
 
 .new_preview {
@@ -27,6 +33,26 @@
 .new_name {
     grid-column-start: 1;
     grid-column-end: 3;
+
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.new_style {
+    margin: 20px;
+}
+
+.new_like {
+    font-size: 15px;
+    text-align: right;
+    color: grey;
+    margin-left: -20px;
+}
+
+.new_date {
+    font-size: 15px;
+    color: grey;
 }
 
 .new_links {
@@ -34,3 +60,51 @@
     grid-column-end: 3;
 }
 
+.icon-calendar:before {
+    font-family: 'icomoon';
+    content: "\e90f";
+    padding-right: 5px;
+}
+
+.icon-comments:before {
+    font-family: 'icomoon';
+    content: "\e916";
+    padding-right: 5px;
+}
+
+.icon-social-vk:before {
+    content: "\e906";
+}
+
+.icon-social-fb:before {
+    content: "\e907";
+}
+
+.icon-social-tw:before {
+    content: "\e908";
+}
+
+.icon-social-gp:before {
+    content: "\e909";
+}
+
+.social-link {
+    font-family: 'icomoon';
+    color: #eb7027;
+    font-size: 23px;
+    padding-right: 15px;
+}
+
+.new_read {
+    border-top: solid 1px #dadada;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-top: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #eb7027;
+}
+
+.new_read:hover {
+    color: #6d3412;
+}

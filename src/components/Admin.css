@@ -2,3 +2,8 @@
     grid-area: admin;
     background-color: yellow;
 }
+
+.addPost {
+    display: grid;
+    grid-template-columns: 1fr;
+}

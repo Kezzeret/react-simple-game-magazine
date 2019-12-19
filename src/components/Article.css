@@ -1,9 +1,16 @@
 .article {
+  background-color: rgb(233, 233, 233);
     display: grid;
-    grid-template-rows: 12fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px 20px 80px;
+    grid-template-areas: 
+    "a_p"
+    "a_n"
+    "a_r";
   }
 
 .article_preview {
+  grid-area: a_p;
     overflow: hidden;
     background-size: cover;
     background-position: center;
@@ -15,5 +22,23 @@
   }
 
   .article_name {
-
+    grid-area: a_n;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
   }
+
+
+  .article_read {
+    margin: 40px;
+    grid-area: a_r;
+    border-top: solid 1px #dadada;
+    padding-top: 3px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #eb7027;
+}
+
+.article_read:hover {
+    color: #6d3412;
+}

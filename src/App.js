@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import './css/fonts.css'
 import Header from './components/Header';
-import Slider from './components/Slider';
+import SimpleSlider from './components/Slider'
 import Navbar from './components/Navbar';
 import MainPage from './components/MainPage';
 import PageArticles from './components/PageArticles';
@@ -17,7 +17,7 @@ const App = (props) => {
     <BrowserRouter>
       <div className="wrapper">
         <Header />
-        <Slider />
+        <SimpleSlider />
         <Route path="/main" render = {  () => <MainPage articlesData={props.appState.articlesData} newsData={props.appState.newsData} /> } />
         <Route path="/articles" render = { () => <PageArticles pageArticlesData={props.appState.pageArticlesData} /> } />
         <Route path="/admin" render = { () => <Admin dispatch={props.dispatch} /> } />

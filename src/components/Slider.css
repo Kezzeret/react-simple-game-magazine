@@ -1,5 +1,9 @@
 .slider {
     grid-area: s;
-    min-width: auto;
-    min-height: auto;
+    background-color: thistle;
+    
   }
+
+.first {
+  background-color: teal;
+}
