@@ -10,16 +10,14 @@ import Admin from './components/Admin'
 import { BrowserRouter, Route } from "react-router-dom";
 
 const App = (props) => {
-
-  
-
+    debugger;
   return (
     <BrowserRouter>
       <div className="wrapper">
         <Header />
         <SimpleSlider />
         <Route path="/main" render = {  () => <MainPage articlesData={props.appState.articlesData} newsData={props.appState.newsData} /> } />
-        <Route path="/articles" render = { () => <PageArticles pageArticlesData={props.appState.pageArticlesData} /> } />
+        <Route path="/articles" render = { () => <PageArticles pageArticlesData={props.appState.articlesData} /> } />
         <Route path="/admin" render = { () => <Admin dispatch={props.dispatch} /> } />
       </div>
     </BrowserRouter>
