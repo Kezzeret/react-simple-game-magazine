@@ -1,6 +1,6 @@
 import React from 'react';
-import Articles from './Articles';
-import News from './News';
+import Articles from './MainPage/Articles';
+import News from './MainPage/News';
 import './MainPage.css'
 
 const MainPage = (props) => {

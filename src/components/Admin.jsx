@@ -1,18 +1,15 @@
 import React from 'react';
 import './Admin.css'
-import AddNews from './Admin_Components/addNews'
-import AddArticle from './Admin_Components/addArticle'
+import AddNewsContainer from "./Admin_Components/addNewsContainer";
+import AddArticleContext from "./Admin_Components/addArticleContext";
 
 
-const Admin = (props) => {
-
-
-  
-  
+const Admin = () => {
+    debugger
     return <div className='admin'>
-      <AddNews dispatch={props.dispatch}/>
+      <AddNewsContainer />
       <p/>
-      <AddArticle dispatch={props.dispatch}/>
+      <AddArticleContext />
     </div>
 }
 

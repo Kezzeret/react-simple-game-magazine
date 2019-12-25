@@ -10,18 +10,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa810db0-cdf7-44f5-af7a-6ec1f6256c86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UsersPage/UsersPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Admin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin_Components/addArticle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin_Components/addArticle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin_Components/addNews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin_Components/addNews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Article.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Article.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/ArticleItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/ArticleItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Articles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Articles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Articles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PageArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PageArticles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/News.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/News.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageArticles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/PageArticles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PageArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/PageArticles.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PieceOfNews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/PieceOfNews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PieceofNews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/PieceofNews.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Slider.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/articlesData-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/articlesData-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +58,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/MainPage" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/ArticlesPage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/redux" />
+      <recent name="$PROJECT_DIR$/src/components/Admin_Components" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -72,7 +98,9 @@
       <option name="presentableId" value="Default" />
       <updated>1575288229324</updated>
       <workItem from="1575288236876" duration="49000" />
-      <workItem from="1576839015517" duration="4642000" />
+      <workItem from="1576839015517" duration="5454000" />
+      <workItem from="1577276685661" duration="2197000" />
+      <workItem from="1577280543744" duration="13191000" />
     </task>
     <servers />
   </component>
@@ -108,8 +136,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>39</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Admin_Components/addArticleContext.jsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

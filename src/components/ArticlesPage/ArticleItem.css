@@ -1,0 +1,17 @@
+.articleItem {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 280px 20px 80px;
+    background-color: #09d3ac;
+}
+
+.articlePreview {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.full {
+    background-color: #eb7027;
+}

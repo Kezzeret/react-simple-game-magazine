@@ -1,5 +1,4 @@
 import React from 'react'
-import { addNewPostActionCreator } from './../../redux/newsData-reducer'
 
 const AddNews = (props) => {
 
@@ -14,7 +13,8 @@ const AddNews = (props) => {
         newPostTitle.current.value = ""
         newPostImg.current.value = ""
         newPostText.current.value = ""
-        props.dispatch(addNewPostActionCreator(title, img, text));
+        props.addNewPost(title, img, text);
+        //props.dispatch(addNewPostActionCreator(title, img, text));
     }
     
     return <div className='addPost'>

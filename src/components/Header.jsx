@@ -12,6 +12,7 @@ const Header = (props) => {
     <div className='menu-top'>
       <NavLink to="/main">Профиль </NavLink>
       <NavLink to="/articles">Статьи </NavLink>
+      <NavLink to="/users">Игроки </NavLink>
       <NavLink to="/admin">Админка</NavLink>
     </div>
     </header>

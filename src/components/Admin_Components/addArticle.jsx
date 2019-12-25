@@ -1,8 +1,7 @@
 import React from 'react'
-import { addNewArticleActionCreator } from './../../redux/articlesData-reducer'
 
 const AddArticle = (props) => {
-
+debugger
     let newArticleTitle = React.createRef();
     let newArticleImg = React.createRef();
     let newArticlePreview = React.createRef();
@@ -17,7 +16,7 @@ const AddArticle = (props) => {
         newArticleImg.current.value = '';
         newArticlePreview.current.value = '';
         newArticleText.current.value = '';
-        props.dispatch(addNewArticleActionCreator(title, image, preview, text));
+        props.addNewArticle(title, image, preview, text);
     }
     
     return <div className='addArticle'>
