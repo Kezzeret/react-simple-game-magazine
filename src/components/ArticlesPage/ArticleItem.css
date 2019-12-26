@@ -1,17 +1,46 @@
 .articleItem {
-
+    font-family: MetronicforBlizzard, sans-serif;
+    background-color: rgb(233, 233, 233);
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 280px 20px 80px;
-    background-color: #09d3ac;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 280px auto auto;
 }
 
 .articlePreview {
+    grid-column-start: 1;
+    grid-column-end: 3;
     overflow: hidden;
     background-size: cover;
     background-position: center;
 }
 
+.articleTitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.articleDate {
+    padding-left: 10px;
+    font-size: 15px;
+    color: grey;
+}
+
+.articleComment {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 15px;
+    color: grey;
+}
+
+.articleText {
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 .full {
-    background-color: #eb7027;
+    grid-area: fa;
 }

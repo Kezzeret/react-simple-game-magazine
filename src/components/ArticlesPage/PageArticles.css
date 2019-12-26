@@ -1,8 +1,50 @@
 .pageArticles {
     grid-area: pa;
     display: grid;
+    grid-template-columns: minmax(400px, 800px) 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "articles interview";
+}
+
+.articles {
     padding: 10px;
     grid-gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-template-rows: auto;
+    grid-area: articles;
+}
+
+.interview {
+    padding: 10px;
+    grid-gap: 10px;
+    grid-area: interview;
+}
+
+.magazin_articles_title {
+    display: inline-block;
+    padding: 0px 0px 15px 30px;
+    max-width: 140px;
+    max-height: 40px;
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fffefe;
+    font-family: "Trajan", sans-serif;
+    background: #eb7027;
+    -webkit-box-shadow: 7px 6px 0px 0px #833e14;
+    box-shadow: 7px 6px 0px 0px #833e14;
+}
+
+.magazin_interview_title {
+    display: inline-block;
+    padding: 0px 0px 15px 30px;
+    width: 170px;
+    max-height: 40px;
+    position: relative;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fffefe;
+    font-family: "Trajan", sans-serif;
+    background: #eb7027;
+    -webkit-box-shadow: 7px 6px 0px 0px #833e14;
+    box-shadow: 7px 6px 0px 0px #833e14;
 }

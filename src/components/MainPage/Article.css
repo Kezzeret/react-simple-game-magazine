@@ -3,7 +3,7 @@
   background-color: rgb(233, 233, 233);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 280px 20px 80px;
+    grid-template-rows: 280px 40px 80px;
     grid-template-areas: 
     "a_p"
     "a_n"
@@ -71,3 +71,4 @@
   height: 20px;
   background: #eb7027;
 }
+

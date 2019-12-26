@@ -10,17 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa810db0-cdf7-44f5-af7a-6ec1f6256c86" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticlesPage/ArticleItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/ArticleItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticlesPage/ArticleItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/ArticleItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticlesPage/PageArticles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/PageArticles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ArticlesPage/PageArticles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticlesPage/PageArticles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainPage/Article.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Article.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/PieceOfNews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/PieceOfNews.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/PieceofNews.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/PieceofNews.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Articles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Articles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Articles.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainPage/Slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/articlesData-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/articlesData-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
       <workItem from="1577361781539" duration="30000" />
       <workItem from="1577362039343" duration="339000" />
       <workItem from="1577363384668" duration="3080000" />
-      <workItem from="1577367220129" duration="4978000" />
+      <workItem from="1577367220129" duration="12015000" />
     </task>
     <servers />
   </component>

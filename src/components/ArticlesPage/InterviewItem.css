@@ -1,0 +1,58 @@
+.interviewItem {
+    font-family: MetronicforBlizzard, sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+
+.interviewPreview {
+    margin-top: 20px;
+    height: 200px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.interviewTitle {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+}
+
+.interviewTitle:before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 17px;
+    width: 10px;
+    height: 10px;
+    background: #eb7027;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.interviewText {
+    padding: 10px;
+}
+
+.full {
+    grid-area: fa;
+}
+
+.interviewLink {
+    padding-left: 14px;
+    grid-area: a_r;
+    border-top: solid 1px #dadada;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 16px;
+    color: #eb7027;
+}
+
+.interviewLink:hover {
+    color: #6d3412;
+}
