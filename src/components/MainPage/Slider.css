@@ -1,9 +1,9 @@
 .slider {
     grid-area: s;
-    background-color: thistle;
-    
-  }
+    background-image: url("https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Resize-nFuOx1EiX8fb0KAj.png");
+    background-size: cover;
+    background-position: center;
+    background-position: top;
 
-.first {
-  background-color: teal;
+    width: 100%;
 }

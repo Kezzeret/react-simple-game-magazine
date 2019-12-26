@@ -95,11 +95,17 @@
     padding-right: 15px;
 }
 
+.social-link:hover {
+    color: #6d3412;
+}
+
 .new_read {
     border-top: solid 1px #dadada;
     grid-column-start: 1;
     grid-column-end: 3;
-    padding-top: 3px;
+    padding-top: 5px;
+    padding-left: 9px;
+    position: relative;
     text-transform: uppercase;
     font-size: 18px;
     color: #eb7027;
@@ -107,4 +113,14 @@
 
 .new_read:hover {
     color: #6d3412;
+}
+
+.new_read:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 6px;
+    width: 3px;
+    height: 20px;
+    background: #eb7027;
 }

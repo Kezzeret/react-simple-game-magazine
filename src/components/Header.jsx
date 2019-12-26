@@ -6,15 +6,12 @@ const Header = (props) => {
 
 
   return <header className='header'>
-    <div className='logo'>
-      <img src='https://everyplayer.ru/img/logo.png'></img>
-    </div>
-    <div className='menu-top'>
-      <NavLink to="/main">Профиль </NavLink>
-      <NavLink to="/articles">Статьи </NavLink>
-      <NavLink to="/users">Игроки </NavLink>
-      <NavLink to="/admin">Админка</NavLink>
-    </div>
+    <nav className='menu-top'>
+      <NavLink to="/main" className='main-nav' activeClassName="activeLink" >Профиль </NavLink>
+      <NavLink to="/articles" className='main-nav' activeClassName="activeLink">Статьи </NavLink>
+      <NavLink to="/users" className='main-nav' activeClassName="activeLink">Игроки </NavLink>
+      <NavLink to="/admin" className='main-nav' activeClassName="activeLink">Админка</NavLink>
+    </nav>
     </header>
 }
 

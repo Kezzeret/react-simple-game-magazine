@@ -4,10 +4,6 @@ import './PieceofNews.css';
 const PieceOfNews = (props) => {
 
     let previewRef = React.createRef();
-    let GetWidth = () => {
-        alert(previewRef.current.offsetWidth);
-        let elem = document.getElementsByClassName('new_preview');
-    }
     return <div className='new'>
         <div className='new_preview' ref={previewRef} style={{ backgroundImage: `url(${props.preview})` }}>
 
