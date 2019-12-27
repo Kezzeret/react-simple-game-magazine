@@ -1,9 +1,8 @@
-import React from "react";
-import './Slider.css'
+import React from 'react';
+import './Slider.css';
 
-const Slider = () => {
-    return <div className="slider" >
-    </div>
-}
+const Slider = () => (
+  <div className="slider" />
+);
 
-export default Slider
+export default Slider;
