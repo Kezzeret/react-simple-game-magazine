@@ -7,7 +7,7 @@ let initialState = [
         image: 'https://gameland.ru/wp-content/uploads/2019/10/kojima.jpg',
         title: 'Интервью с Хидэо Кодзима',
         link: 'Читать подробнее',
-        text: 'Самый известный разработчик современности'
+        text: 'Разговор о разнице культур со знаменитым геймдизайнером'
     },
     {
         id: 2,

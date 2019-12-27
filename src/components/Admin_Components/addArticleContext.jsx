@@ -1,16 +1,14 @@
-import React from 'react'
-import {addNewArticleActionCreator} from './../../redux/articlesData-reducer'
+import React from 'react';
+import { addNewArticleActionCreator } from './../../redux/articlesData-reducer';
 import AddArticle from "./addArticle";
 import StoreContext from "../../StoreContex";
 
 const AddArticleContext = () => {
-
-debugger
     return (
         <StoreContext.Consumer>
             { store => {
-                let addNewArticle = (title, image, preview, text) => {
-                    store.dispatch(addNewArticleActionCreator(title, image, preview, text));
+                let addNewArticle = (title, image, preview, text, text_small) => {
+                    store.dispatch(addNewArticleActionCreator(title, image, preview, text, text_small));
                 }
 
                 return <AddArticle addNewArticle={addNewArticle}/>

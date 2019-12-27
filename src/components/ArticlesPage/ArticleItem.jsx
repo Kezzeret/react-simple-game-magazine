@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './ArticleItem.css';
+import ReactHtmlParser from 'react-html-parser';
 
 class ArticleItem extends Component {
 
@@ -10,7 +11,7 @@ class ArticleItem extends Component {
 
     render() {
 
-        const articleTextFull = this.state.isOpen && <div className='articleText'>{this.props.text}</div>
+        const articleTextFull = this.state.isOpen && <div className='articleText'>{ReactHtmlParser(this.props.text)}</div>
         const articleTextSmall = !this.state.isOpen && <div className='articleText'>{this.props.text_small}</div>
         return <div className={this.state.className}>
         <div className='articlePreview' style={{backgroundImage: `url(${this.props.image})`}} />
@@ -27,20 +28,13 @@ class ArticleItem extends Component {
         </div>
         {articleTextFull}
         {articleTextSmall}
-            <button onClick={this.handleClick}>
-                {this.state.isOpen ? "Закрыть" : "Открыть"}
+            <button className="buttonReadMore" onClick={this.handleClick}>
+                {this.state.isOpen ? "Свернуть" : "Читать далее"}
             </button>
     </div>
     }
 
     handleClick = () => {
-        if (this.state.isOpen) {
-            this.state.className = 'articleItem small'
-        }
-        else
-        {
-            this.state.className = 'articleItem full'
-        }
         this.setState({
             isOpen: !this.state.isOpen
         });

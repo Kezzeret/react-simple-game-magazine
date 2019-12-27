@@ -41,6 +41,24 @@
     grid-column-end: 3;
 }
 
-.full {
-    grid-area: fa;
+.articleText img {
+    max-width: 100%;
+}
+
+
+.buttonReadMore {
+    font-weight: bold;
+    color: #eb7027;
+    font-size: 15px;
+    justify-self: end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.buttonReadMore:hover
+{
+    color: #6d3412;
 }

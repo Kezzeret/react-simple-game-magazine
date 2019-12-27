@@ -1,5 +1,6 @@
 import React from 'react';
 import './PieceofNews.css';
+import ReactHtmlParser from "react-html-parser";
 
 const PieceOfNews = (props) => {
 
@@ -12,22 +13,21 @@ const PieceOfNews = (props) => {
             {props.title}
         </div>
         <div className='new_date new_style'>
-            <span class="icon-calendar"></span>
+            <span className="icon-calendar"></span>
             {props.date}
         </div>
         <div className='new_like new_style'>
-            <span class="icon-comments"></span>
+            <span className="icon-comments"></span>
             {props.like_count}
         </div>
         <div className='new_text new_style'>
-
-            {props.text}
+            {ReactHtmlParser(props.text)}
         </div>
         <div className='new_links new_style'>
-            <span class="icon-social-vk social-link"></span>
-            <span class="icon-social-fb social-link"></span>
-            <span class="icon-social-tw social-link"></span>
-            <span class="icon-social-gp social-link"></span>
+            <span className="icon-social-vk social-link"></span>
+            <span className="icon-social-fb social-link"></span>
+            <span className="icon-social-tw social-link"></span>
+            <span className="icon-social-gp social-link"></span>
         </div>
         <div className='new_read new_style'>
             {props.more}

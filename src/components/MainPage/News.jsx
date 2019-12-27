@@ -1,11 +1,8 @@
 import React from 'react';
 import './News.css';
-
-import PieceOfNews from './PieceOfNews.jsx'
+import PieceOfNews from './PieceOfNews';
 
 const News = (props) => {
-
-    debugger;
     let j = 0;
     let arr = new Array(props.news.length);
     for (let i = props.news.length - 1; i >= 0; i--) {

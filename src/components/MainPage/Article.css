@@ -3,7 +3,7 @@
   background-color: rgb(233, 233, 233);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 280px 40px 80px;
+    grid-template-rows: 280px auto auto;
     grid-template-areas: 
     "a_p"
     "a_n"
@@ -24,7 +24,8 @@
 
   .article_name {
     grid-area: a_n;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
     position: relative;
     padding-left: 24px;
     font-size: 20px;
@@ -47,7 +48,9 @@
 
 
   .article_read {
-    margin: 40px;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 10px;
     padding-left: 14px;
     grid-area: a_r;
     border-top: solid 1px #dadada;
