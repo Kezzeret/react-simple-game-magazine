@@ -13,7 +13,7 @@ const App = (props) => (
   <div className="wrapper">
     <Header />
     <Slider />
-    <Route path="/main" render={() => <MainPage articlesData={props.appState.articlesData} newsData={props.appState.newsData} />} />
+    <Route exact path="/" render={() => <MainPage articlesData={props.appState.articlesData} newsData={props.appState.newsData} />} />
     <Route path="/articles" render={() => <PageArticles pageArticlesData={props.appState.articlesData} pageArticlesInterviewData={props.appState.interviewData} />} />
     <Route path="/admin" render={() => <Admin />} />
     <Route path="/users" render={() => <UsersPage />} />
