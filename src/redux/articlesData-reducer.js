@@ -79,7 +79,7 @@ const articlesDataReducer = (state = initialState, action) => {
       email: 'admin@admin.ru',
       password: 'Qwerty1234',
     }
-
+        /*
     fetch('https://everyplayer-back.herokuapp.com/api/v1/users/signIn',
         {
           method: 'POST',
@@ -87,6 +87,8 @@ const articlesDataReducer = (state = initialState, action) => {
           mode: 'cors'
         }).then(result => result.json())
         .then(data => console.log('data: ', data));
+        
+         */
     axios.post('https://everyplayer-back.herokuapp.com/api/v1/users/signIn', admin).then(res => {
       console.log(res);
       console.log(res.data);
