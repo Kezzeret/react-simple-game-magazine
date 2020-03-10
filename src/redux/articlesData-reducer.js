@@ -65,6 +65,7 @@ const articlesDataReducer = (state = initialState, action) => {
       commentsCount: 'никому не нравится',
       link: 'ссылки на соцсети',
     };
+    console.log('hello');
     state.unshift(newArticle);
   }
   return state;

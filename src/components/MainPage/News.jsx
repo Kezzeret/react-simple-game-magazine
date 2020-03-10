@@ -3,12 +3,6 @@ import './News.css';
 import PieceOfNews from './PieceOfNews';
 
 const News = (props) => {
-  let j = 0;
-  const arr = new Array(props.news.length);
-  for (let i = props.news.length - 1; i >= 0; i -= 1) {
-    arr[j] = props.news[i];
-    j += 1;
-  }
 
   const newsElement = props.news.map((n) => (
     <div key={n.id}>
