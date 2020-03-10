@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 const ADD_ARTICLE = 'ADD-ARTICLE';
 
 const initialState = [
@@ -57,29 +59,56 @@ const articlesDataReducer = (state = initialState, action) => {
 
     const newArticle = {
       title: action.articleTitle,
+      text: action.articleText,
+      previewText: action.articleTextSmall,
+      previewImage:  action.articlePreview,
+      headImage: action.articleImage,
+      url: `${Math.floor(Math.random() * Math.floor(1000))}`,
+      type: 'article',
+      /*
       date: today,
       image: action.articleImage,
       preview: action.articlePreview,
-      text: action.articleText,
       text_small: action.articleTextSmall,
       commentsCount: 'никому не нравится',
       link: 'ссылки на соцсети',
+       */
     };
-    console.log('hello');
-    state.unshift(newArticle);
+    //state.unshift(newArticle);
+    const admin = {
+      email: 'admin@admin.ru',
+      password: 'Qwerty1234',
+    }
+
+    fetch('https://everyplayer-back.herokuapp.com/api/v1/users/signIn',
+        {
+          method: 'POST',
+          body: admin,
+          mode: 'cors'
+        }).then(result => result.json())
+        .then(data => console.log('data: ', data));
+    axios.post('https://everyplayer-back.herokuapp.com/api/v1/users/signIn', admin).then(res => {
+      console.log(res);
+      console.log(res.data);
+    })
+    axios.post('https://everyplayer-back.herokuapp.com/api/v1/articles', newArticle).then(res => {
+
+      console.log(res);
+    });
+
   }
   return state;
 };
 
 export const addNewArticleActionCreator = (title, image, preview, text, text_small) => (
-  {
-    type: ADD_ARTICLE,
-    articleTitle: title,
-    articleImage: image,
-    articlePreview: preview,
-    articleText: text,
-    articleTextSmall: text_small,
-  }
+    {
+      type: ADD_ARTICLE,
+      articleTitle: title,
+      articleImage: image,
+      articlePreview: preview,
+      articleText: text,
+      articleTextSmall: text_small,
+    }
 );
 
 export default articlesDataReducer;
