@@ -87,12 +87,9 @@ const articlesDataReducer = (state = initialState, action) => {
           mode: 'cors'
         }).then(result => result.json())
         .then(data => console.log('data: ', data));
-        
+
          */
-    axios.post('https://everyplayer-back.herokuapp.com/api/v1/users/signIn', admin).then(res => {
-      console.log(res);
-      console.log(res.data);
-    })
+
     axios.post('https://everyplayer-back.herokuapp.com/api/v1/articles', newArticle).then(res => {
 
       console.log(res);

@@ -6,6 +6,12 @@
     grid-gap: 10px;
 }
 
+.authForm {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 20px;
+}
+
 .addPost {
     display: grid;
     grid-template-columns: 1fr;
