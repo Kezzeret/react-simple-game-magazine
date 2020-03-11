@@ -11,10 +11,33 @@ const AuthForm = () => {
             email: email,
             password: password,
         }
+        axios({
+            url: 'https://everyplayer-back.herokuapp.com/api/v1/users/signIn',
+            method: 'post',
+            data: user,
+            withCredentials: true
+        }).then(res => {
+            console.log(res);
+            console.log(res.data);
+            console.log(res.headers["set-cookies"])
+        });
+        /*
         axios.post('https://everyplayer-back.herokuapp.com/api/v1/users/signIn', user).then(res => {
             console.log(res);
             console.log(res.data);
-        })
+            console.log(res.headers["set-cookies"])
+        });
+        axios({
+            url: 'https://everyplayer-back.herokuapp.com/api/v1/users/signIn',
+            method: 'post',
+            data: user,
+        }).then(res => {
+            console.log(res);
+            console.log(res.data);
+            console.log(res.headers["set-cookies"])
+        });
+        
+         */
     }
 
     return (
