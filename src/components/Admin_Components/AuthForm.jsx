@@ -1,16 +1,20 @@
 import React, {useState} from 'react'
 import axios from "axios";
+import { useCookies } from 'react-cookie';
 
 const AuthForm = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [cookies, setCookie] = useCookies(['token']);
 
     function postAuth() {
         const user = {
             email: email,
             password: password,
         }
+        let token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJtaXNzaW9ucyI6WyJjb21tZW50IiwibW9kZXJhdG9yIl0sImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJuaWNrTmFtZSI6IkFkbWluIiwiaWF0IjoxNTgzOTYyNDE3LCJleHAiOjE1ODQ1NjcyMTd9.qTDoGTBu8dNQEOXVfMI6H9NqhN4EiYFlVtBmuJdnZbo';
+        setCookie('token', token, { path: '/' });
         axios({
             url: 'https://everyplayer-back.herokuapp.com/api/v1/users/signIn',
             method: 'post',
