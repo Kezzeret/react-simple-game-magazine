@@ -13,7 +13,7 @@ const AuthForm = () => {
             email: email,
             password: password,
         }
-        fetch("http://everyplayer-back.herokuapp.com/api/v1/users/signIn", {
+        fetch("https://everyplayer-back.herokuapp.com/api/v1/users/signIn", {
             "method": "POST",
             "withCredentials": true,
             "headers": {
