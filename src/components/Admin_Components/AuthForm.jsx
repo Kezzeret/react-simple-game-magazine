@@ -18,6 +18,9 @@ const AuthForm = () => {
         axios({
             url: 'https://everyplayer-back.herokuapp.com/api/v1/users/signIn',
             method: 'post',
+            headers: {
+                'Access-Control-Allow-Origin': 'https://everyplayer-back.herokuapp.com/',
+            },
             data: user,
             withCredentials: true
         }).then(res => {
