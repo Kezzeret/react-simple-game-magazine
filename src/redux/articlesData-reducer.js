@@ -90,11 +90,22 @@ const articlesDataReducer = (state = initialState, action) => {
 
          */
 
+        fetch('https://everyplayer-back.herokuapp.com/api/v1/articles', {
+          method: 'POST',
+          headers: {
+            Authentication: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwZXJtaXNzaW9ucyI6WyJjb21tZW50IiwibW9kZXJhdG9yIl0sImVtYWlsIjoiYWRtaW5AYWRtaW4ucnUiLCJuaWNrTmFtZSI6IkFkbWluIiwiaWF0IjoxNTgzOTYyNDE3LCJleHAiOjE1ODQ1NjcyMTd9.qTDoGTBu8dNQEOXVfMI6H9NqhN4EiYFlVtBmuJdnZbo'
+          },
+          body: newArticle,
+        }).then(res => {
+
+          console.log(res);
+        })
+    /*
     axios.post('https://everyplayer-back.herokuapp.com/api/v1/articles', newArticle).then(res => {
 
       console.log(res);
     });
-
+*/
   }
   return state;
 };
