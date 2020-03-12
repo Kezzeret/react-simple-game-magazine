@@ -14,15 +14,15 @@ const AuthForm = () => {
             password: password,
         }
         fetch("https://everyplayer-back.herokuapp.com/api/v1/users/signIn", {
-            "method": "POST",
-            "withCredentials": true,
-            "headers": {
-                "content-type": "application/json",
-                "origin": "https://everyplayer-frontend.herokuapp.com"
+            method:'POST',
+            withCredentials: true,
+            headers: {
+                'content-type': 'application/json',
+                'origin': "https://everyplayer-frontend.herokuapp.com"
             },
-            "body": {
-                "email": "admin@admin.ru",
-                "password": "Qwerty1234"
+            body: {
+                email: "admin@admin.ru",
+                password: "Qwerty1234"
             }
         })
             .then(response => {
