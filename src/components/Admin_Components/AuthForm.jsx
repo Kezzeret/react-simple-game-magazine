@@ -27,6 +27,7 @@ const AuthForm = () => {
         })
             .then(response => {
                 console.log(response);
+                console.log( res.headers.entries());
             })
             .catch(err => {
                 console.log(err);
